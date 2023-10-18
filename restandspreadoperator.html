@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest and Spread operator</title>
+</head>
+
+<body>
+    <p>Write a JavaScript program to compare two objects to determine if the first contains equivalent property values
+        to the second one.</p>
+    <!-- <script>
+        const matchs = (obj, source) =>{Object.keys(source).every(key => obj.hasOwnProperty(key) && obj[key] === source[key])};
+        console.log(matchs({name:"abhay", age:26, gender:"Male", beard:true}, {name:"abhay", age:26,beard:true}));
+        console.log(matchs({age:26, gender:"Male", beard:true}, {name:"abhay", age:26,beard:true}));
+        console.log(matchs({name:"abhay", gender:"Male",beard:true}, {name:"abhay", age:26,beard:true}));
+    </script> -->
+
+    <p>JavaScript Functions with Return Value</p>
+    <script>
+        //    function sum(hindi, eng, math){
+        //         var a = hindi + eng + math;
+        //         return a;
+        //    }
+
+        //    function precentage(tm){
+        //      let per = tm/300 * 100;
+        //      return per;
+        //    }
+
+        //    let total = sum(80,80,91);
+
+        //    document.write(total + "<br>" + "<br>");
+
+        //    let pt =  precentage(total);
+
+        //    document.write(Math.round(pt)); 
+
+    </script>
+
+    <p>spread operator and Rest operator in haca script</p>
+
+    <script>
+        // Spread operator is use to Expend the element;
+        // reset operator is use to compress the element;
+
+        //Single Array
+        const array = [1, 2, 3, 6, 4, 5];
+        const newarray = [...array]
+        console.log(newarray);
+        // Multipul Array
+                const arr1 = [1, 2, 3, 4, 5];
+                const arr2 = [6, 8, 7, 92];
+                const arr3 = [...arr1, ...arr2];
+        console.log(arr3)
+        // using in string
+        const sub = "abhay";
+        const subarr = [...sub]
+        console.log(subarr)
+        console.log(...sub);
+        //Reset operator
+        function reststr(...str) {
+            let sum = 0;
+            for (let i of str) {
+                sum += i;
+            }
+            return sum
+        }
+        console.log(reststr(1, 3, 6));
+        console.log(reststr(1, 3, 4, 6));
+        console.log(reststr(1, 3, 5, 8, 9));
+    </script>
+
+</body>
+
+</html>
