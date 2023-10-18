@@ -72,6 +72,25 @@
         console.log(reststr(1, 3, 5, 8, 9));
     </script>
 
+    <p>I have an array: Myarray=[1,0,0,1,0,1,1,0,0]</p>
+
+    <script>
+
+        let Myarray = [0,0,0,1,2,2,1,0,0,0,1,2,20,1,];
+        let argarr = [];
+        let flag = 0;
+        for(let i=0; i<Myarray.length -1; i++){
+            if(Myarray[i] === flag){
+                argarr = argarr + Myarray[i];
+                if(flag == 0)
+                    flag = 1;
+                else
+                flag = 0;
+            }
+        }
+        console.log(argarr)
+    </script>
+
 </body>
 
 </html>
